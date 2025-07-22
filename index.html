@@ -64,6 +64,44 @@
     a:hover {
       text-decoration: underline;
     }
+    .timeline {
+  position: relative;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 3px solid #0d6efd;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  width: 18px;
+  height: 18px;
+  background: #0d6efd;
+  border-radius: 50%;
+  top: 0;
+}
+
+.timeline-step {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-step::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 8px;
+  width: 12px;
+  height: 12px;
+  background-color: #0d6efd;
+  border-radius: 50%;
+}
+
+.timeline h5 {
+  margin-top: 0;
+}
+
   </style>
 </head>
 <body>
@@ -163,34 +201,41 @@
   </section> 
   <!-- Experience -->
   <section class="container my-5">
-    <h2 class="section-title">Experience</h2>
-    <div class="card p-3 mb-3">
+  <h2 class="section-title mb-4">Experience Roadmap</h2>
+  <div class="timeline">
+    
+    <div class="timeline-step">
       <h5>MES Software Developer – Salcomp Technologies India Pvt Ltd</h5>
       <small class="text-muted">MAR 2020 – Present</small>
       <ul>
-        <li>Design and develop modules for the MES system tailored to specific manufacturing processes.</li>
-        <li>Integrate MES with other systems such as SAP. Ensure seamless communication between factory-floor equipment and higher-level business systems.</li>
-        <li>Develop and optimize database schemas, queries, and stored procedures for managing production data.</li>
+        <li>Design and develop modules for the MES system tailored to manufacturing processes.</li>
+        <li>Integrate MES with SAP and factory-floor equipment for seamless data flow.</li>
+        <li>Optimize SQL schemas, queries, and stored procedures for production data.</li>
       </ul>
     </div>
-    <div class="card p-3 mb-3">
+
+    <div class="timeline-step">
       <h5>Equipment Automation – Rising Star Mobiles India Pvt Ltd</h5>
       <small class="text-muted">DEC 2018 – NOV 2019</small>
       <h5>Equipment Automation – Flextronics Technologies India Pvt Ltd</h5>
       <small class="text-muted">MAY 2018 – DEC 2018</small>
       <ul>
-        <li>Perform routine inspections, troubleshooting, and diagnostics to maintain optimal machine performance, coordinating repairs and upgrades as needed.</li>
-        <li>Collaborate with cross-functional teams to integrate new technologies into testing equipment, enhancing efficiency and reliability.</li>
+        <li>Conduct machine inspections, troubleshooting, and maintenance.</li>
+        <li>Integrate new tech into testing equipment to enhance reliability.</li>
       </ul>
     </div>
-    <div class="card p-3 mb-3">
-      <h5>Design And development – Utsavgiri Computers & Electronics India Pvt Ltd</h5>
+
+    <div class="timeline-step">
+      <h5>Design & Development – Utsavgiri Computers & Electronics India Pvt Ltd</h5>
       <small class="text-muted">OCT 2016 – OCT 2017</small>
       <ul>
-        <li>Design and develop Switched-Mode Power Supplies and lamination transformers, optimizing efficiency, size, weight, and cost, while conducting thermal analysis, simulations, prototyping, and testing toensure performance, safety, and reliability.</li>
+        <li>Develop SMPS and lamination transformers with focus on size, cost, and thermal reliability.</li>
       </ul>
     </div>
-  </section>  
+
+  </div>
+</section>
+
   
   <!-- Contact -->
   <section class="container my-5">
