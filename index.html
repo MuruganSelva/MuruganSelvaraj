@@ -5,97 +5,154 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Murugan Selvaraj | MES & .NET Developer</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
   <style>
     body {
       font-family: 'Roboto', sans-serif;
       background-color: #f8f9fa;
     }
+
     .hero {
-      background: linear-gradient(to right, #0d6efd, #0b5ed7);
+      background: linear-gradient(rgba(13, 110, 253, 0.8), rgba(11, 94, 215, 0.8)),
+                  url('https://www.transparenttextures.com/patterns/white-wall.png');
       color: white;
-      padding: 60px 0;
+      padding: 80px 0;
+      text-align: center;
     }
-    .hero h1 {
-      font-size: 3rem;
+
+    .hero img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border: 4px solid white;
     }
-    .hero p {
-      font-size: 1.2rem;
-    }
+
     .section-title {
-      border-left: 4px solid #0d6efd;
-      padding-left: 10px;
+      border-left: 5px solid #0d6efd;
+      padding-left: 12px;
       margin-bottom: 1.5rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #0b5ed7;
     }
+
     .card {
       border: none;
       border-left: 4px solid #0d6efd;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease-in-out;
     }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
     footer {
       background-color: #0d6efd;
       color: white;
       text-align: center;
       padding: 1rem;
-      margin-top: 2rem;
+      margin-top: 3rem;
     }
-    a { text-decoration: none; }
+
+    a {
+      text-decoration: none;
+      color: #0d6efd;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
 
-  <section class="hero text-center">
+  <!-- Hero -->
+  <section class="hero">
     <div class="container">
+      <img src="passport_size_port.jpg" alt="Murugan Selvaraj" class="rounded-circle mb-3">
       <h1>Murugan Selvaraj</h1>
       <p class="lead">MES Developer | .NET Engineer | Automation Enthusiast</p>
     </div>
   </section>
 
+  <!-- Profile -->
   <section class="container my-5">
-    <h2 class="section-title">About Me</h2>
-    <p>
-      I have 8+ years of experience in electronics manufacturing, specializing in MES development, equipment automation, and IoT-based monitoring systems. My expertise includes .NET backend development, SQL Server, and embedded projects using ESP32.
+    <h2 class="section-title">Profile</h2>
+    <p class="text-justify">
+      <strong>8 years of experience</strong>, including <strong>5 years in software development</strong> and <strong>3 years in electronic design and automation</strong>.
     </p>
+    <ul>
+      <li><strong>Software (5 yrs):</strong> Web/Windows apps, IoT, MES integration, dashboards.</li>
+      <li><strong>Automation (3 yrs):</strong> Equipment control, electronics, and performance tuning.</li>
+      <li>Self-managed & collaborative team contributor.</li>
+    </ul>
   </section>
 
+  <!-- Skills -->
   <section class="container my-5">
     <h2 class="section-title">Skills</h2>
-    <div class="row">
-      <div class="col-md-6">
-        <ul>
-          <li><strong>Languages:</strong> C#, SQL, JavaScript</li>
-          <li><strong>Frameworks:</strong> .NET Core, .NET Framework, MVC</li>
-          <li><strong>IoT:</strong> ESP32, Arduino, MQTT, Telegram API</li>
-        </ul>
-      </div>
-      <div class="col-md-6">
-        <ul>
-          <li><strong>Web:</strong> HTML, CSS, Bootstrap, Web API</li>
-          <li><strong>Tools:</strong> VisualStudio, SSMS, VS Code, Postman</li>
-          <li><strong>Soft Skills:</strong> Communication, Debugging, Teaching</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="container my-5">
-    <h2 class="section-title">Projects</h2>
-
     <div class="row g-4">
       <div class="col-md-6">
         <div class="card p-3 h-100">
-          <h5>🔧 Server Room Monitoring</h5>
-          <p>ESP32 system for real-time temp/humidity monitoring with Telegram alerts. Reduced equipment failure by 30%.</p>
-          <p><strong>Tech:</strong> ESP32, Arduino, Telegram API, .NET API</p>
-          <a href="#">View Code</a>
+          <h5><i class="bi bi-code-slash"></i> Programming & Frameworks</h5>
+          <ul>
+            <li>C#, .NET Framework, .NET Core</li>
+            <li>OOPs, Windows App, Web App</li>
+            <li>Web API, JavaScript, JQuery</li>
+          </ul>
         </div>
       </div>
       <div class="col-md-6">
         <div class="card p-3 h-100">
-          <h5>💧 Smart Water Level Alert</h5>
-          <p>LED + WiFi + Telegram-based ESP32 water level alert system with secure settings via web interface.</p>
-          <p><strong>Tech:</strong> ESP32, HTML Web UI, Telegram Bot</p>
-          <a href="#">View Code</a>
+          <h5><i class="bi bi-tools"></i> Tools & Technologies</h5>
+          <ul>
+            <li>SQL Server, Postman, Visual Studio</li>
+            <li>HTML, CSS, Bootstrap</li>
+            <li>Git, VS Code</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-3 h-100">
+          <h5><i class="bi bi-cpu"></i> Industrial Automation & IoT</h5>
+          <ul>
+            <li>Industrial Automation, Embedded Systems</li>
+            <li>IoT, ESP32, Arduino, Telegram Bots</li>
+            <li>PLC Basics, Equipment Integration</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-3 h-100">
+          <h5><i class="bi bi-people-fill"></i> Soft Skills</h5>
+          <ul>
+            <li>Leadership, Teamwork</li>
+            <li>Project Ownership, Communication</li>
+            <li>Mentoring, Continuous Learning</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="container my-5">
+    <h2 class="section-title">Projects</h2>
+    <div class="row g-4">      
+      <div class="col-md-6">
+        <div class="card p-3 h-100">
+          <h5><i class="bi bi-cloud-lightning-rain"></i> Server Room Temperature & Humidity Monitor</h5>
+          <p>Monitors server room conditions using IoT sensors. Sends data via Web API for real-time dashboards, alerts, and historical analytics to prevent overheating.</p>
+          <p><strong>Tech:</strong> IoT Sensors, .NET Web API, SQL Server</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-3 h-100">
+          <h5><i class="bi bi-lightning-charge"></i> Real-time Power Consumption Monitoring</h5>
+          <p>Tracks equipment power usage in real-time using IoT energy meters. Sends data to a Web API for efficiency analysis, anomaly detection, and predictive maintenance.</p>
+          <p><strong>Tech:</strong> IoT Energy Meters, .NET Web API, Charting, SQL Server</p>
         </div>
       </div>
     </div>
@@ -104,14 +161,13 @@
   <!-- Experience -->
   <section class="container my-5">
     <h2 class="section-title">Experience</h2>
-
     <div class="card p-3 mb-3">
       <h5>MES Software Developer – EngineeringMaster</h5>
-      <small>2019 – Present</small>
+      <small class="text-muted">2019 – Present</small>
       <ul>
-        <li>Designed MES systems for traceability, production config, and reporting.</li>
-        <li>Developed .NET Web APIs for machine-to-server communication.</li>
-        <li>Integrated IoT monitoring (power, temp) with real-time dashboards.</li>
+        <li>Built MES systems for traceability, production config, and reporting.</li>
+        <li>Developed .NET Web APIs for machine connectivity.</li>
+        <li>Integrated IoT data (power, temp) into real-time dashboards.</li>
       </ul>
     </div>
   </section>
@@ -119,9 +175,9 @@
   <!-- Contact -->
   <section class="container my-5">
     <h2 class="section-title">Contact</h2>
-    <p><strong>Email:</strong> <a href="mailto:murugan@example.com">murugan@example.com</a></p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></p>
+    <p><i class="bi bi-envelope"></i> <strong>Email:</strong> <a href="mailto:murugan@example.com">murugan@example.com</a></p>
+    <p><i class="bi bi-github"></i> <strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+    <p><i class="bi bi-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></p>
   </section>
 
   <!-- Footer -->
